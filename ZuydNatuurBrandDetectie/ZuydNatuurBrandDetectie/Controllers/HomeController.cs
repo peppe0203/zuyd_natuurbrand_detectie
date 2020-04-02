@@ -14,5 +14,24 @@ namespace ZuydNatuurBrandDetectie.Controllers
             return View();
         }
 
+        public ActionResult Contact()
+        {
+            return View();
+        }
+
+        public ActionResult Help()
+        {
+            return View();
+        }
+
+        public ActionResult Over()
+        {
+            return View();
+        }
+
+        public ActionResult Overzicht()
+        {
+            return View();
+        }
     }
 }
