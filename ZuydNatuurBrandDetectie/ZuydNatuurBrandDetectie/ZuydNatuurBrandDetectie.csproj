@@ -92,6 +92,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\LoginPage.css" />
     <Content Include="Content\navbar.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\Gilroy-Regular.svg" />
@@ -140,6 +141,7 @@
     <Content Include="Views\Home\Overzicht.cshtml" />
     <Content Include="Views\Home\Help.cshtml" />
     <Content Include="Views\Home\Over.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
