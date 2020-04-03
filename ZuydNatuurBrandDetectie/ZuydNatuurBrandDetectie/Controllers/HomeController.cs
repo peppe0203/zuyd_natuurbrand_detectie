@@ -38,5 +38,7 @@ namespace ZuydNatuurBrandDetectie.Controllers
         {
             return View();
         }
+
+
     }
 }
