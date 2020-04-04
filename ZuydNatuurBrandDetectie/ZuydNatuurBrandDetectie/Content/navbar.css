@@ -10,7 +10,7 @@ body {
 .nav-container {
     position: absolute;
     width: 100%;
-    height: 88px;
+    height: 70px;
     left: 0px;
     top: 0px;
     background: #6C7F55;
@@ -78,6 +78,23 @@ nav {
     color: #FFFFFF;
 }
 
-.right-nav-items button{
-    margin-left: 10px;
+.right-nav-items button {
+    margin-left: 14px;
+    margin-top: 5px;
+    background-color: green;
+    border: none;
+    color:white;
+    padding: 7px;
+    -webkit-box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+}
+
+.right-nav-items button:focus {
+    outline:none
+}
+
+.right-nav-items button:hover {
+    border-radius:15px;
+    background-color: black;
 }
