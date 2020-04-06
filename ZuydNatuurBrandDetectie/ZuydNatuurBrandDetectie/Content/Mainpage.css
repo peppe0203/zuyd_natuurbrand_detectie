@@ -1,2 +1,74 @@
 ﻿body {
 }
+
+.wrapper-top {
+    background-image: url('../Images/Background2.jpg');
+    background-size:contain;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    top:6%;
+}
+
+.wrapper-bottom {
+    position:fixed;
+    top: 60%;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #6C7F55;
+    z-index:10;
+    opacity:0.8;
+}
+
+.top-text {
+    position:fixed;
+    top:25%;
+    left:13%;
+    color:white;
+    font-weight:bold;
+    font-size:34px;
+    line-height:1.2;
+    
+}
+
+.bottom-text-title {
+    position:absolute;
+    top:5%;
+    left:57%;
+    color: white;
+    font-weight:800;
+    font-size:25px;
+}
+
+.bottom-text {
+    position: absolute;
+    top: 15%;
+    left: 57%;
+    color: white;
+    font-size: 14px;
+    line-height:1.3;
+}
+
+.bottom-button {
+    margin-left: 57%;
+    margin-top: 15%;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 7px;
+    -webkit-box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+}
+
+.bottom-button:focus {
+    outline:none;
+}
+
+.bottom-button:hover {
+    border-radius: 15px;
+    background-color: black;
+}
