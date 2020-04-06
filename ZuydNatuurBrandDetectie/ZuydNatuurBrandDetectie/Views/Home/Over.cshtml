@@ -1,7 +1,42 @@
 ﻿
 @{
     ViewBag.Title = "Over";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Over</h2>
+<!DOCTYPE html>
 
+<html>
+<head>
+    <link href="~/Content/Over.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Over</title>
+</head>
+
+<body>
+    <div class="wrapper-page">
+        <a href="https://www.zuyd.nl/over-zuyd" target="_blank"><img src="~/Images/Zuyd_Logo_PNG.png" class="wrapper-image" /></a>
+        <a class="text-top-title">Wie zijn wij?</a>
+        <a class="text-top">
+            De projectgroep bestaat uit een groep 2de jaars
+            <br />HBO-ICT studenten van Zuyd Hogeschool.
+            <br />Alle projectleden van de groep volgen de
+            <br />development richting binnnen de studie.
+            <br />De studenten zijn tussen de 19 en 22 jaar oud.
+            <br />De grootte van de groep bedraag 4 studenten,
+            <br />Maar is in week 7 vergroot naar 5 studenten.
+        </a>
+        <div class="wrapper-top-text"></div>
+        <a class="text-bottom-title">Wat is ons doel?</a>
+        <a class="text-bottom">
+            LoRa toepassingen bekender te maken en het
+            <br />maken van een proof of concept.
+            <br />Door een proof of concept te maken worden
+            <br />de mogelijkheden van LoRa duidelijker.
+            <br />Een tweede doel is, preventieve
+            <br />brandbestrijding.
+        </a>
+        <div class="wrapper-bottom-text"></div>
+    </div>
+</body>
+</html>

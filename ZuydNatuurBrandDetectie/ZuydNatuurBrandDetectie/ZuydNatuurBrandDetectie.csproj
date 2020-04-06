@@ -92,15 +92,17 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Mainpage.css" />
+    <Content Include="Content\Index.css" />
     <Content Include="Content\LoginPage.css" />
     <Content Include="Content\navbar.css" />
+    <Content Include="Content\Over.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\Gilroy-Regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\Background2.jpg" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\Zuyd_Logo_PNG.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\Gilroy-Regular.eot" />
@@ -144,6 +146,7 @@
     <Content Include="Views\Home\Help.cshtml" />
     <Content Include="Views\Home\Over.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Mainpage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
