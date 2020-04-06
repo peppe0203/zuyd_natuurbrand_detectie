@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link href="~/Content/LoginPage.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container-left">
+    </div>
+    <div class="loginlimiter">
+            <div class="wrapper-login">
+                <div class="wrapper-login-left">
+                    <div class="wrapper-login-left-image">
+                        <img src="~/Images/logo.png" width="75" height="60" />
+                    </div>
+                    <a class="wrapper-login-left-title"> Zuyd Groep 10</a>
+                    <div class="wrapper-login-left-tekst">
+                        <a> Een bosbrand, daar</a> <br/>
+                        <a> wil jij je vingers toch</a> <br/>
+                        <a> niet aan verbranden!</a>
+                    </div>
+                </div>
+                <div class="wrapper-login-right">
+                    <a class="tekst-login-right">Log in</a>
+                    <a class="email-title">Email</a>
+                    <input class="email-box" id="emailAddress" type="email" placeholder="Voorbeeld@zuyd.nl" />
+                    <a class="password-title">Wachtwoord</a>
+                    <input class="password-box" id="Password" type="password" placeholder="Vul je wachtwoord in" />
+                    <a href="#" target="_blank" class="password-forgotten">Wachtwoord vergeten?</a>
+                    <button id="LoginButton" class="login-button" type="submit" onclick="location.href='@Url.Action("Index", "Home")'">Login</button>
+                </div>
+            </div>
+    </div>
+
+</body>
+</html>

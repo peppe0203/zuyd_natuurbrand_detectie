@@ -1,0 +1,204 @@
+﻿@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: Gilroy;
+}
+
+.container-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background-color: #6C7F55;
+}
+
+.loginlimiter {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #f2f2f2;
+    
+}
+
+.wrapper-login {
+    position:fixed;
+    background: #fff;
+    width: 30%;
+    height: 350px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    -webkit-box-shadow: -6px -6px 17px 1px rgba(0,0,0,0.7);
+    -moz-box-shadow: -6px -6px 17px 1px rgba(0,0,0,0.7);
+    box-shadow: -6px -6px 17px 1px rgba(0,0,0,0.7);
+    z-index:2000;
+    margin-left: 30%;
+    margin-top: 10%;
+    
+}
+
+.wrapper-login-left {
+    position: absolute;
+    width: 39%;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    background: #6C7F55;
+}
+
+.wrapper-login-left-title {
+    align-items: center;
+    color: white;
+    text-align: center;
+    left: 55px;
+    top: 230px;
+    display: flex;
+    position: absolute;
+    font-size: 18px;
+}
+
+.wrapper-login-left-tekst {
+    align-items: center;
+    color: white;
+    text-align: center;
+    left: 42px;
+    top: 260px;
+    position: absolute;
+}
+
+.wrapper-login-left-image {
+    position: absolute;
+    left: 75px;
+    top: 160px;
+    display: flex;
+    align-items: center;
+
+}
+
+.wrapper-login-right {
+    position: absolute;
+    width: 61%;
+    height: 600px;
+    margin-left: 39%;
+    left: 0px;
+    top: 0px;
+}
+
+.tekst-login-right {
+    margin-left: 35%;
+    font-size: 23px;
+    top: 90px;
+    position: absolute;
+}
+
+.email-title {
+    font-weight: bold;
+    position:absolute;
+    margin-left: 22%;
+    top: 162px;
+    font-size: 13px;
+}
+
+.email-box {
+    margin-left: 22%;
+    top: 180px;
+    position: absolute;
+    height: 18px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    -webkit-box-shadow: 4px 5px 11px 1px rgba(13,12,13,0.3);
+    -moz-box-shadow: 4px 5px 11px 1px rgba(13,12,13,0.3);
+    box-shadow: 4px 5px 11px 1px rgba(13,12,13,0.3);
+}
+
+.email-box:focus {
+    outline: none;
+    border: 1px solid green;
+}
+
+.password-title {
+    font-weight: bold;
+    position: absolute;
+    margin-left: 22%;
+    top: 252px;
+    font-size: 13px;
+}
+
+.password-box {
+    margin-left: 22%;
+    top: 270px;
+    position: absolute;
+    height: 18px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    -webkit-box-shadow: 4px 5px 11px 1px rgba(13,12,13,0.3);
+    -moz-box-shadow: 4px 5px 11px 1px rgba(13,12,13,0.3);
+    box-shadow: 4px 5px 11px 1px rgba(13,12,13,0.3);
+}
+
+.password-box:focus {
+    outline: none;
+    border: 1px solid green;
+}
+
+.password-forgotten {
+    font-weight: bold;
+    position: absolute;
+    margin-left: 44%;
+    top: 320px;
+    font-size: 10px;
+    text-decoration:none;
+    color: black;
+}
+
+.password-forgotten:hover{
+    color:green;
+    text-decoration:underline;
+}
+
+.login-button {
+    color: white;
+    text-transform: uppercase;
+    background: green;
+    padding: 7.5px;
+    border-style:none;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    margin-left: 22%;
+    top: 63%;
+    position:absolute;
+    width: 190px;
+    font-style:normal;
+    font-size:11px;
+    font-weight:normal;
+    text-transform:inherit;
+}
+
+.login-button:hover {
+    border:none;
+    border-radius: 50px;
+    border-color: white;
+    transition: all 0.3s ease 0s;
+    background-color:black;
+}
+
+.login-button:focus {
+    outline:none;
+}
