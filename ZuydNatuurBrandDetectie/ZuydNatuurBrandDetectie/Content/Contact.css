@@ -1,0 +1,43 @@
+﻿body {
+}
+
+.wrapper-page {
+    background-color: #879477;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 6%;
+    z-index: -10;
+}
+
+.wrapper-middle {
+    height: 550px;
+    width: 450px;
+    position:absolute;
+    left:35%;
+    top:10%;
+}
+
+.wrapper-left {
+    background-color: #6C7F55;
+    height: 550px;
+    width: 175px;
+    position: absolute;
+    left:0;
+    top:0;
+    border-radius:10px;
+}
+
+.wrapper-right {
+    background-color: white;
+    height: 550px;
+    width: 275px;
+    position: absolute;
+    left: 175px;
+    top: 0;
+    border-radius: 15px;
+    -webkit-box-shadow: 7px 7px 16px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 16px 1px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 16px 1px rgba(0,0,0,0.75);
+}
