@@ -1,7 +1,49 @@
-﻿    
+﻿
 @{
     ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Contact</h2>
+<!DOCTYPE html>
 
+<html>
+<head>
+    <link href="~/Content/Contact.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+</head>
+
+<body>
+   <div class="wrapper-page">
+       <div class="wrapper-middle">
+           <div class="wrapper-left">
+               <a class="Koptext-left">
+                   Adres
+                   <br />Telefoonnummer
+                   <br />Email
+               </a>
+               <a class="adress-text">
+                   Nieuw Eyckholt 300
+                   <br />6419 DJ Heerlen
+               </a>
+               <a class="telefoonnummer-text"> +31 (0)45 400 64 00</a>
+               <a class="email-text">Ict@zuyd.nl</a>
+           </div>
+           <div class="wrapper-right">
+               <a class="koptext-right">
+                   Voornaam - Achternaam
+                   <br />Email
+                   <br />Telefoonnummer
+                   <br />Bericht
+               </a>
+               <input id="input-voornaam" class="input-voornaam" placeholder="Voornaam"/>
+               <input id="input-achternaam" class="input-achternaam" placeholder="Achternaam"/>
+               <input id="input-email" class="input-email" placeholder="Voorbeeld@zuyd.nl" type="email"/>
+               <input id="input-telefoonnumer" class="input-telefoonnummer" placeholder="0612380673" type="tel"/>
+               <textarea id="input-bericht" class="input-bericht" rows="2" cols="25" placeholder="Bericht"></textarea>
+               <button class="bericht-button">Bericht versturen</button>
+           </div>
+       </div>
+   </div>
+</body>
+</html>
