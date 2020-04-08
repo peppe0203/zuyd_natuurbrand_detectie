@@ -18,9 +18,12 @@
                     <li>
                         <a href="/home/Over">Over</a>
                     </li>
+                @if(Session["Function"] != null)
+                { 
                     <li>
                         <a href="#">Overzicht</a>
                     </li>
+                }
                     <li>
                         <a href="/home/Contact">Contact</a>
                     </li>
@@ -30,12 +33,22 @@
                 </ul>
 
                 <ul class="right-nav-items">
-                    <li>
-                        @Html.ActionLink("Login", "Login", "Home")
-                    </li>
-                    <li>
-                        <button href="#">Registreer</button>
-                    </li>
+                    @if (Session["Function"] == null)
+                    {
+                        <li>
+                            @Html.ActionLink("Login", "Login", "Home")
+                        </li>
+                        <li>
+                            <button href="#">Registreer</button>
+                        </li>
+                    }
+                    else
+                    {
+                        <li><a>Ingelogd: @Session["Function"].ToString()</a></li>
+                        <li>
+                            <button onclick="location.href=' @Url.Action("LogOut", "User")';">Uitloggen</button>
+                        </li>
+                    }
                 </ul>
             </nav>
         </div>

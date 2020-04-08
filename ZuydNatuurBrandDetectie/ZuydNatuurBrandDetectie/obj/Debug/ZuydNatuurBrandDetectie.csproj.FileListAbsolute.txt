@@ -62,7 +62,6 @@ C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetecti
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\bin\System.Web.Helpers.xml
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\bin\System.Web.Mvc.xml
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\obj\Debug\ZuydNatuurBrandDetectie.csprojAssemblyReference.cache
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\obj\Debug\ZuydNatuurBrandDetectie.csproj.CoreCompileInputs.cache
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\obj\Debug\ZuydNatuurBrandDetectie.csproj.CopyComplete
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\obj\Debug\ZuydNatuurBrandDetectie.dll

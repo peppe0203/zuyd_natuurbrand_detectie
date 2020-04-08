@@ -1,4 +1,5 @@
-﻿
+﻿@model ZuydNatuurBrandDetectie.Models.user
+
 @{
     Layout = null;
 }
@@ -30,13 +31,17 @@
                 </div>
             </div>
             <div class="wrapper-login-right">
-                <a class="tekst-login-right">Log in</a>
-                <a class="email-title">Email</a>
-                <input class="email-box" id="emailAddress" type="email" placeholder="Voorbeeld@zuyd.nl" />
-                <a class="password-title">Wachtwoord</a>
-                <input class="password-box" id="Password" type="password" placeholder="Vul je wachtwoord in" />
-                <a href="#" target="_blank" class="password-forgotten">Wachtwoord vergeten?</a>
-                <button id="LoginButton" class="login-button" type="submit" onclick="location.href='@Url.Action("Index", "Home")'">Login</button>
+                @using (@Html.BeginForm("Authorize", "User", FormMethod.Post))
+                {
+                    <a class="tekst-login-right">Log in</a>
+                    <a class="email-title">Email</a>
+                    //<input class="email-box" id="emailAddress" type="email" placeholder="Voorbeeld@zuyd.nl" />
+                    @Html.TextBoxFor(m => m.name, htmlAttributes: new {id="emailAddress", @class="email-box", placeholder="Voorbeeld@zuyd.nl" })
+                    <a class="password-title">Wachtwoord</a>
+                    <input class="password-box" id="Password" type="password" placeholder="Vul je wachtwoord in" />
+                    <a href="#" target="_blank" class="password-forgotten">Wachtwoord vergeten?</a>
+                    <input id="LoginButton" class="login-button"type="submit" value="Login" />
+                }
             </div>
         </div>
     </div>
