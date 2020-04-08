@@ -43,7 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -121,9 +129,19 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\koppelmeldingTblsController.cs" />
+    <Compile Include="Controllers\meldingenTblsController.cs" />
+    <Compile Include="Controllers\metingTblsController.cs" />
+    <Compile Include="Controllers\nodeTblsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\koppelmeldingTbl.cs" />
+    <Compile Include="Models\meldingenTbl.cs" />
+    <Compile Include="Models\metingTbl.cs" />
+    <Compile Include="Models\nodeTbl.cs" />
+    <Compile Include="Models\SQLContext.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +166,26 @@
     <Content Include="Views\Home\Over.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Mainpage.cshtml" />
+    <Content Include="Views\nodeTbls\Create.cshtml" />
+    <Content Include="Views\nodeTbls\Delete.cshtml" />
+    <Content Include="Views\nodeTbls\Details.cshtml" />
+    <Content Include="Views\nodeTbls\Edit.cshtml" />
+    <Content Include="Views\nodeTbls\Index.cshtml" />
+    <Content Include="Views\meldingenTbls\Create.cshtml" />
+    <Content Include="Views\meldingenTbls\Delete.cshtml" />
+    <Content Include="Views\meldingenTbls\Details.cshtml" />
+    <Content Include="Views\meldingenTbls\Edit.cshtml" />
+    <Content Include="Views\meldingenTbls\Index.cshtml" />
+    <Content Include="Views\metingTbls\Create.cshtml" />
+    <Content Include="Views\metingTbls\Delete.cshtml" />
+    <Content Include="Views\metingTbls\Details.cshtml" />
+    <Content Include="Views\metingTbls\Edit.cshtml" />
+    <Content Include="Views\metingTbls\Index.cshtml" />
+    <Content Include="Views\koppelmeldingTbls\Create.cshtml" />
+    <Content Include="Views\koppelmeldingTbls\Delete.cshtml" />
+    <Content Include="Views\koppelmeldingTbls\Details.cshtml" />
+    <Content Include="Views\koppelmeldingTbls\Edit.cshtml" />
+    <Content Include="Views\koppelmeldingTbls\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -157,7 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

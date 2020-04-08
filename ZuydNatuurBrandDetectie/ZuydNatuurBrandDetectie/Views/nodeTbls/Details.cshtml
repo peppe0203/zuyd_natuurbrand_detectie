@@ -1,0 +1,50 @@
+﻿@model ZuydNatuurBrandDetectie.Models.nodeTbl
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>nodeTbl</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.locatie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locatie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.natuurgebied)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.natuurgebied)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.actief)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.actief)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.batterijVervangen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.batterijVervangen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

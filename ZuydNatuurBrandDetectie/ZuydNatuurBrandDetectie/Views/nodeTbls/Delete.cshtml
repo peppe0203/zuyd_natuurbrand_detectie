@@ -1,0 +1,56 @@
+﻿@model ZuydNatuurBrandDetectie.Models.nodeTbl
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>nodeTbl</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.locatie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locatie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.natuurgebied)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.natuurgebied)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.actief)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.actief)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.batterijVervangen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.batterijVervangen)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

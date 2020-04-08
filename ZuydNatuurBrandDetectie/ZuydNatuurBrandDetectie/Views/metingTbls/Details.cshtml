@@ -1,0 +1,74 @@
+﻿@model ZuydNatuurBrandDetectie.Models.metingTbl
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>metingTbl</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nodeTbl.locatie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nodeTbl.locatie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.datum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.datum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tijd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tijd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.luchtVochtigheidSensor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.luchtVochtigheidSensor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grondSensor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grondSensor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diepGrondSensor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diepGrondSensor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.temperatuurSensor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.temperatuurSensor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
