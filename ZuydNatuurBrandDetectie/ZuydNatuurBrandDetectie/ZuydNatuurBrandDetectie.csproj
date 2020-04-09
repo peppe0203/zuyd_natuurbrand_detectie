@@ -101,6 +101,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Contact.css" />
+    <Content Include="Content\CreateNode.css" />
     <Content Include="Content\Overzicht.css" />
     <Content Include="Content\Index.css" />
     <Content Include="Content\LoginPage.css" />
@@ -113,6 +114,16 @@
     <Content Include="Images\Background2.jpg" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Zuyd_Logo_PNG.png" />
+    <Content Include="Models\overzichtImages\ alert-triangle%402x.png" />
+    <Content Include="Models\overzichtImages\ alert-triangle%403x.png" />
+    <Content Include="Models\overzichtImages\ alert-triangle.png" />
+    <Content Include="Models\overzichtImages\ broadcasting%402x.png" />
+    <Content Include="Models\overzichtImages\ broadcasting%403x.png" />
+    <Content Include="Models\overzichtImages\ broadcasting.png" />
+    <Content Include="Models\overzichtImages\ pulse%402x.png" />
+    <Content Include="Models\overzichtImages\ pulse%403x.png" />
+    <Content Include="Models\overzichtImages\ pulse.png" />
+    <Content Include="Models\overzichtImages\alert-triangle.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\Gilroy-Regular.eot" />

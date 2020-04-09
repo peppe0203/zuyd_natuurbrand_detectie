@@ -20,12 +20,6 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-#nodesBox{}
-
-#tempBox {
-   
-}
-
 .eclipse {
     position: fixed;
     width: 70px;
@@ -53,4 +47,24 @@
 .lower-Title {
     color: rgba(108, 127, 85, 0.8);
     margin-left: 25%;
+}
+
+.lowerBoxContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lowerBoxes {
+    height: 120px;
+    width: 90%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    background: white;
+    border-radius: 15px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+#gemTempNode{
+    width: 30%;
+    margin-right: 60%; 
 }
