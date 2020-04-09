@@ -20,6 +20,11 @@ namespace ZuydNatuurBrandDetectie.Controllers
             return View(db.nodeTbls.ToList());
         }
 
+        public ActionResult Overzicht()
+        {
+            return View(db.nodeTbls.ToList());
+        }
+
         // GET: nodeTbls/Details/5
         public ActionResult Details(int? id)
         {

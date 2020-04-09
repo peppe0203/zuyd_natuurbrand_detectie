@@ -1,6 +1,42 @@
-﻿
+﻿@using ZuydNatuurBrandDetectie.Models
+@model IndexVm
+
 @{
     ViewBag.Title = "Overzicht";
+    //Redirect gebruiker terug naar hoofdmenu indien niet ingelogd
+    if (Session["Function"] == null)
+    {
+        Response.Redirect("~/Home/Index");
+    }
+
+    //Tel alle node objecten die uit de db zijn gevonden op indien actief gelijk is aan true
+    int aantalNodes = 0;
+
+    foreach (var node in Model.nodes)
+    {
+        if (node.actief == true)
+        {
+            aantalNodes ++;
+        }
+    }
+
+    //Tel alle temperatuur metingen op en bereken het gemiddelde
+    List<int> temps = new List<int>();
+    foreach (var meting in Model.metingen)
+    {
+        temps.Add(meting.temperatuurSensor);
+    }
+
+    double gemTemp = temps.Average();
+
+    //Tel alle meldingen op
+    int aantalMeldingen = 0;
+    foreach (var melding in Model.meldingen)
+    {
+        aantalMeldingen++;
+    }
+
+
 }
 
 
@@ -24,7 +60,7 @@
                     <img src="~/Images/overzichtImages/ broadcasting.png" class="eclipseIcon" />
                 </div>
                 <div class="upper-Title">
-                    <h1>10</h1>
+                    <h1>@aantalNodes</h1>
                     <!-- Data toevoegen vanuit db - sql statement SELECT * FROM nodes where nodeActief = True -->
                 </div>
 
@@ -41,7 +77,7 @@
                 </div>
 
                 <div class="upper-Title">
-                    <h1>22</h1>
+                    <h1>@gemTemp</h1>
                 </div>
 
                 <div class="lower-Title">
@@ -58,7 +94,7 @@
                 </div>
 
                 <div class="upper-Title">
-                    <h1>7</h1>
+                    <h1>@aantalMeldingen</h1>
                 </div>
 
                 <div class="lower-Title">
@@ -68,6 +104,18 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="lowerBoxContainer">
+        <div class="lower-boxes">
+            <div class="meldingenGraph">
+
+            </div>
+
+            <div class="gemTempNode">
+
+            </div>
+        </div>
     </div>
 </body>
 </html>
