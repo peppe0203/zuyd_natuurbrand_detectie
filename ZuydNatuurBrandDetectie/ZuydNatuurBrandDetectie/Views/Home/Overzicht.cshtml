@@ -3,5 +3,72 @@
     ViewBag.Title = "Overzicht";
 }
 
-<h2>Overzicht</h2>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/Overzicht.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Overzicht</title>
+</head>
+
+<body>
+    <div class="pageTitle">
+        <h1>Overzicht</h1>
+    </div>
+    <div class="boxContainer">
+        <div class="upper-boxes" id="nodesBox">
+            <div class="nodesActief">
+                <div class="eclipse">
+                    <img src="~/Images/overzichtImages/ broadcasting.png" class="eclipseIcon" />
+                </div>
+                <div class="upper-Title">
+                    <h1>10</h1>
+                    <!-- Data toevoegen vanuit db - sql statement SELECT * FROM nodes where nodeActief = True -->
+                </div>
+
+                <div class="lower-Title">
+                    <a>Nodes Actief</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="upper-boxes" id="tempBox">
+            <div class="gemTemperatuur">
+                <div class="eclipse">
+                    <img src="~/Images/overzichtImages/ pulse.png" class="eclipseIcon" />
+                </div>
+
+                <div class="upper-Title">
+                    <h1>22</h1>
+                </div>
+
+                <div class="lower-Title">
+                    <a>Gemiddelde Temperatuur</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="upper-boxes" id="meldingenBox">
+            <div class="aantalMeldingen">
+                <div class="eclipse">
+                    <img src="~/Images/overzichtImages/ alert-triangle.png" class="eclipseIcon" />
+                </div>
+
+                <div class="upper-Title">
+                    <h1>7</h1>
+                </div>
+
+                <div class="lower-Title">
+                    <a>Aantal Meldingen</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
 

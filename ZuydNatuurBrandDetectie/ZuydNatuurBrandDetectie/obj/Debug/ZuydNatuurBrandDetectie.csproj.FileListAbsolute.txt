@@ -138,3 +138,4 @@ C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetecti
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\bin\EntityFramework.SqlServer.dll
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\bin\EntityFramework.xml
 C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\bin\EntityFramework.SqlServer.xml
+C:\Users\tonit\Documents\GitHub\zuyd_natuurbrand_detectie\ZuydNatuurBrandDetectie\ZuydNatuurBrandDetectie\obj\Debug\ZuydNatuurBrandDetectie.csprojAssemblyReference.cache
