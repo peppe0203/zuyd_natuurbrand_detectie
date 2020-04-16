@@ -1,33 +1,25 @@
 ﻿@using ZuydNatuurBrandDetectie.Models
-@model IndexVm
+@model NodeVm
 
 @{
-    ViewBag.Title = "Overzicht";
+    ViewBag.Title = "Details";
+
     //Redirect gebruiker terug naar hoofdmenu indien niet ingelogd
     if (Session["Function"] == null)
     {
         Response.Redirect("~/Home/Index");
     }
 
-    //Tel alle node objecten die uit de db zijn gevonden op indien actief gelijk is aan true
-    int aantalNodes = 0;
-
-    foreach (var node in Model.nodes)
-    {
-        if (node.actief == true)
-        {
-            aantalNodes ++;
-        }
-    }
-
     //Tel alle temperatuur metingen op en bereken het gemiddelde
     List<int> temps = new List<int>();
+
+
     foreach (var meting in Model.metingen)
     {
         temps.Add(meting.temperatuurSensor);
     }
 
-    double gemTemp = temps.Average();
+    double gemTemp = (temps.Count() > 0) ? temps.Average() : 0;
 
     //Tel alle meldingen op
     int aantalMeldingen = 0;
@@ -35,9 +27,6 @@
     {
         aantalMeldingen++;
     }
-
-
-
 }
 
 
@@ -47,25 +36,27 @@
 <head>
     <link href="~/Content/Overzicht.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
-    <title>Overzicht</title>
+    <title>OverzichtNode</title>
 </head>
 
 <body>
+
     <div class="pageTitle">
-        <h1>Overzicht</h1>
+        <h1>Overzicht / Node ID: @Model.node.id</h1>
     </div>
+
     <div class="boxContainer">
         <div class="upper-boxes" id="nodesBox">
             <div class="nodesActief">
                 <div class="eclipse">
-                    <img src="~/Images/overzichtImages/ broadcasting.png" class="eclipseIcon" />
+                    <img src="~/Models/overzichtImages/ lightning.png" class="eclipseIcon" />
                 </div>
                 <div class="upper-Title">
-                    <h1>@aantalNodes</h1>
+                    <h1>@Model.node.batterijVervangen.ToShortDateString()</h1>
                 </div>
 
                 <div class="lower-Title">
-                    <a>Nodes Actief</a>
+                    <a>Accu vervang datum</a>
                 </div>
             </div>
         </div>
@@ -106,28 +97,43 @@
 
     </div>
 
-    <div class="lowerBoxContainer">
-        <div class="lowerBoxes" id="meldingenGraph">
-            <div class="chart">
-                <img src="~/Models/overzichtImages/Chart.PNG" width="900" height="480" />
-            </div>
-        </div>
+    <ul class="box-wrapper">
+        <li class="box boxa">
+            <img src="~/Models/overzichtImages/Chart.PNG" width="900" height="480"  id="chartImage"/>
+        </li>
 
-            <div class="lowerBoxes" id="gemTempNode">
-                <div class="box-title">
-                    <a>Nodes</a>
-                </div>
-                <hr />
-
-                <div class="node-data">
-                    @foreach (var node in Model.nodes)
-                    {
-                    <a>Node_ID: @node.id - @Html.ActionLink("Details", "Details", new { id = node.id}) </a>
-                        <br />
-                    }
-                </div>
+        <li class="box boxb">
+            <div class="box-title">
+                <a>Locatie</a>
             </div>
-        </div>
+            <hr />
+            <div class="box-data">
+                <a>Locatie - @Model.node.locatie</a>
+                <br />
+                <a>Natuurgebied - @Model.node.natuurgebied</a>
+            </div>
+        </li>
+
+        <li class="box boxc">
+            <div class="box-title">
+                <a>Meldingen</a>
+            </div>
+            <hr />
+
+            <div class="box-data boxMeldingen">
+                @foreach (var item in Model.meldingen)
+                {
+                    <a>ID - @item.id - Datum - @item.datum.ToShortDateString() - Type - @item.type</a>
+                    <br />
+                    <hr />
+                }
+            </div>
+
+
+        </li>
+    </ul>
+
+
 </body>
 </html>
 

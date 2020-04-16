@@ -120,10 +120,15 @@
     <Content Include="Models\overzichtImages\ broadcasting%402x.png" />
     <Content Include="Models\overzichtImages\ broadcasting%403x.png" />
     <Content Include="Models\overzichtImages\ broadcasting.png" />
+    <Content Include="Models\overzichtImages\ lightning%402x.png" />
+    <Content Include="Models\overzichtImages\ lightning%403x.png" />
+    <Content Include="Models\overzichtImages\ lightning.png" />
+    <Content Include="Models\overzichtImages\ lightning.svg" />
     <Content Include="Models\overzichtImages\ pulse%402x.png" />
     <Content Include="Models\overzichtImages\ pulse%403x.png" />
     <Content Include="Models\overzichtImages\ pulse.png" />
     <Content Include="Models\overzichtImages\alert-triangle.png" />
+    <Content Include="Models\overzichtImages\Chart.PNG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="fonts\Gilroy-Regular.eot" />
@@ -154,6 +159,7 @@
     <Compile Include="Models\meldingenTbl.cs" />
     <Compile Include="Models\metingTbl.cs" />
     <Compile Include="Models\nodeTbl.cs" />
+    <Compile Include="Models\NodeVm.cs" />
     <Compile Include="Models\SQLContext.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\user.cs" />
@@ -201,6 +207,7 @@
     <Content Include="Views\koppelmeldingTbls\Details.cshtml" />
     <Content Include="Views\koppelmeldingTbls\Edit.cshtml" />
     <Content Include="Views\koppelmeldingTbls\Index.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

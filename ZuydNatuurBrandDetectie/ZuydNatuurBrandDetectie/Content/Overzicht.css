@@ -21,7 +21,7 @@
 }
 
 .eclipse {
-    position: fixed;
+    position: absolute;
     width: 70px;
     height: 70px;
     background: rgba(196, 196, 196, 0.7);
@@ -55,7 +55,7 @@
 }
 
 .lowerBoxes {
-    height: 120px;
+    height: 500px;
     width: 90%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     background: white;
@@ -64,7 +64,112 @@
     margin-top: 30px;
 }
 
-#gemTempNode{
-    width: 30%;
-    margin-right: 60%; 
+.box-title {
+    margin-top: 2%;
+    margin-left: 6%;
+    position: absolute;
+    font-size: 24px;
+    line-height: 1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #6C7F55;
+    opacity: 0.7;
+}
+
+.chart{
+    margin-top: 2%;
+}
+
+#meldingenGraph {
+    padding-right: 10%;
+    padding-left: 1%;
+}
+
+#gemTempNode {
+    width: 80%;
+    margin-left: 10%;
+}
+
+    #gemTempNode a {
+        font-size: 20px;
+        margin-left: 5%;
+        margin-bottom: 1%;  
+    }
+
+    #gemTempNode hr {
+        margin-top: 15%;
+    }
+
+    #gemTempNode node-data {
+        margin-left: 35%;
+        position: absolute;
+    }
+
+#node-data a{
+    font-size: 20px;
+}
+
+.box-wrapper {
+    margin-left: -40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 450px;
+    list-style-type: none;
+}
+
+.box {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    background: white;
+    border-radius: 15px;
+}
+
+.boxa {
+    flex: 0 0 100%;
+    width: 70%;
+}
+
+.boxb {
+    order: 2;
+    margin-top: 1%;
+    
+}
+
+.boxc {
+}
+
+.boxb,
+.boxc {
+    flex: 1 0 40%;
+    width: 25%;
+    margin-left: 30px;
+}
+
+.boxb hr,
+.boxc hr{
+    margin-top: 15%;
+}
+
+#chartImage{
+    margin-left: 15px;
+}
+
+.box-data{
+    margin-left: 5%;
+}
+
+.box-data a{
+    font-size: 25px;
+}
+
+.boxMeldingen a{
+    font-size: 15px;
+}
+
+.boxMeldingen hr {
+    margin-top: 1px;
+    margin-right: 20px;
+    color: rgb(108, 127, 85);
 }
