@@ -57,7 +57,7 @@ namespace ZuydNatuurBrandDetectie.Controllers
             {
                 db.nodeTbls.Add(nodeTbl);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Overzicht", "Home");
             }
 
             return View(nodeTbl);

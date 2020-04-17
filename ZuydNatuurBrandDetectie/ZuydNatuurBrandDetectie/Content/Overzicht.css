@@ -173,3 +173,25 @@
     margin-right: 20px;
     color: rgb(108, 127, 85);
 }
+
+.nodeButton {
+    position: absolute;
+    margin-left: 1%;
+    margin-top: 1%;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 7px;
+    -webkit-box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 3.5px 6px 0px rgba(0,0,0,0.75);
+}
+
+.nodeButton:focus {
+    outline: none
+}
+
+.nodeButton:hover {
+    border-radius: 15px;
+    background-color: black;
+}
