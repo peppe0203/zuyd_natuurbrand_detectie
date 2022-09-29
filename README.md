@@ -7,5 +7,7 @@ Stappen voor gebruik:
 
 Zie handleiding.docx voor meer info rondom het programma. Voor het ontwerp bekijk het PoC.
 
+_Het gehele project is in de vorm van een PoC waarbij het niet geheel functioneel is_
+
 Auteurs:
-Antwan Horbach, Lennox Narinx, Miguel Daniëls en Tonito Kusters.
+Antwan Horbach, Lennox Narinx, Miguel Daniëls, Giuseppe Collura en Tonito Kusters.
